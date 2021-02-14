@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #3a5066;
+  min-height: 100vh;
+}
+
+@font-face {
+  font-family: Recoleta-Bold;
+  src: url(../fonts/Recoleta-Bold.ttf);
+}
+
+@font-face {
+  font-family: Recoleta-Medium;
+  src: url(../fonts/Recoleta-Medium.ttf);
+}
+
+@font-face {
+  font-family: Recoleta-Regular;
+  src: url(../fonts/Recoleta-Regular.ttf);
+}
+
+.container {
+  padding: 10%;
+  width: 80%;
+  max-width: 80%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 45px ;
+}
+
+p {
+  color: #F37E70;
+}
+
+.comingSoon {
+  font-size: 35px;
+}
+
+.bold {
+  font-family: Recoleta-Bold;
+}
+
+.regular {
+  font-family: Recoleta-Regular;
+}
+
+.hashtag {
+  font-size: 25px;
+}
+
+.social-logo {
+  height: 34px;
+}
+
+.social-desktop {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.social-mobile{
+  display: none;
+}
+
+.centre {
+  margin-top: 40%;
+  margin-bottom: 10%;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 15%;
+    display: block;
+    width: auto;
+  }
+
+  .comingSoon {
+    font-size: 25px;
+    padding-right: 12%;
+  }
+
+  .hashtag {
+    font-size: 20px;
+  }
+
+  .centre {
+    margin-top: 45%;
+    margin-bottom: 55%;
+  }
+
+  .social-desktop {
+    display: none;
+  }
+
+  .social-mobile{
+    display: flex;
+  }
+
+  .social-logo {
+    height: 30px;
+    margin-right: 10px;
+  }
+}
