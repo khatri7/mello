@@ -1,3 +1,7 @@
+* {
+  transition: ease all .5s;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -21,13 +25,9 @@ body {
 }
 
 .container {
-  padding: 8%;
-  width: 84%;
-  max-width: 84%;
   position: absolute;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 0;
 }
 
 .logo {
@@ -56,12 +56,12 @@ p {
 
 .social-logo {
   height: 34px;
+  margin-left: 10px;
 }
 
 .social-desktop {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
 }
 
 .social-mobile{
@@ -73,6 +73,45 @@ p {
   margin-bottom: 15%;
 }
 
+@media all and (min-width: 1400px) {
+  .container {
+    padding: 6%;
+    width: 88%;
+    max-width: 88%;
+  }
+}
+
+@media all and (min-width: 1200px) and (max-width: 1400px) {
+  .container {
+    padding: 8%;
+    width: 84%;
+    max-width: 84%;
+  }
+}
+
+@media all and (min-width: 1000px) and (max-width: 1200px) {
+  .container {
+    padding: 10%;
+    width: 80%;
+    max-width: 80%;
+  }
+}
+
+@media all and (min-width: 800px) and (max-width: 1000px) {
+  .container {
+    padding: 12%;
+    width: 76%;
+    max-width: 76%;
+  }
+}
+
+@media all and (min-width: 600px) and (max-width: 800px) {
+  .container {
+    padding: 14%;
+    width: 74%;
+    max-width: 74%;
+  }
+}
 
 @media all and (max-width: 600px) {
   .container {
@@ -105,6 +144,7 @@ p {
 
   .social-logo {
     height: 30px;
+    margin-left: 0px;
     margin-right: 10px;
   }
 }
